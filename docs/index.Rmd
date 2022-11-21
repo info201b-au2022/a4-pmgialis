@@ -1,7 +1,7 @@
 ---
-title: "Your A4 Report Title (TODO: Revise title)"
-author: "Your Name"
-date: '2022-11-01'
+title: "Incarceration and Inequality in the U.S."
+author: "Paul Gialis"
+date: '2022-11-20'
 output: html_document
 ---
 
@@ -12,13 +12,6 @@ source("../source/analysis.R")
 
 ## Abstract 
 [TODO: Include a short abstract (about 50 words)]
-
-# Test (TODO: Remove before submission!!)
-```{r echo=FALSE}
-q1_string <- test_query1()
-num <- 5
-```
-As you know, this is a markdown report. The [R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) is **useful!**
 
 * Here's a test of a dynamic variable. Say **"`r q1_string`!!!** 
 * Here's another test. A vector
@@ -34,12 +27,22 @@ print(sum)
 ```
 
 ## Introduction 
-[TODO]
+In this assignment, we analyzed a data set of incarceration in the U.S. by various different variables. Using this data, it is obvious that there is a clear distinction of incarceration rates based on race, and certain states present this trend stronger than others. Through this assignment, I was able to create data visualizations to expose these inequalities better than data could alone. As a white male, this allowed the facts to cement in my brain, even though I fall victim to privilege hazards. All U.S. citizens are stakeholders in this data set, especially people of color. 
 
 ## Data Summary 
 [TODO]
 
-[TODO ... other sections ... See Canvas for details]
+## Growth of the U.S. Prison Population
+
+
+## Growth of Prison Population by State
+
+
+## Growth of Incarcerated Black and White Populations
+
+
+## Map of Black Incarceration in the U.S.
+
 
 _All the very best with your work!_
 

@@ -13,36 +13,34 @@ source("../source/analysis.R")
 ## Abstract 
 [TODO: Include a short abstract (about 50 words)]
 
-* Here's a test of a dynamic variable. Say **"`r q1_string`!!!** 
-* Here's another test. A vector
-of numbers: `r test_query2(num)`.
-
-Recall that _{r echo=TRUE}_ can be used to display the code, 
-which is very useful when developing and debugging a report. Here's an example: 
-
-```{r echo=TRUE}
-num <- 5
-sum <- sum(test_query2(num))
-print(sum)
-```
 
 ## Introduction 
-In this assignment, we analyzed a data set of incarceration in the U.S. by various different variables. Using this data, it is obvious that there is a clear distinction of incarceration rates based on race, and certain states present this trend stronger than others. Through this assignment, I was able to create data visualizations to expose these inequalities better than data could alone. As a white male, this allowed the facts to cement in my brain, even though I fall victim to privilege hazards. All U.S. citizens are stakeholders in this data set, especially people of color. 
+In this assignment, we analyzed a data set of incarceration in the U.S. by various different variables. Using this data, it is obvious that there is a clear distinction of incarceration rates based on race, and certain states present this trend stronger than others. Through this assignment, I was able to create data visualizations to expose these inequalities better than data could alone. As a white male, this allowed the facts to cement in my brain, even though I fall victim to privilege hazards. All U.S. citizens are stakeholders in this data set, especially people of color. Through this assignment, I was able to discover that while incarceration rates for the black population of America are bad right now, they were even worse in the past. I was also able to discover that there are around as many black people in jail as white people, despite the massive gap in population sizes. 
 
 ## Data Summary 
-[TODO]
+In the 10 years before 2018, the population of black people in jail has changed by `r black_incarceration_decade()`. This means that the amount of black people in jails in the U.S. has decreased within the previous decade. While this is a step in the right direction, the highest recorded number of black people in jail on this data set was across `r black_incarceration_max()`. This means that 11 years from the most recent date of 2018, the highest amount of black people ever recorded on this data set were in jail. In 2018, there were `r black_incarceration_current()` recorded black people in jails across the country. This is still a high number compared to the population of black people in the U.S., but it is an improvement.
 
 ## Growth of the U.S. Prison Population
-
+```{r total, echo=FALSE}
+plot(plot_jail_pop_for_us())
+```
+*Figure 1*. Increase of Jail Population in U.S. (1970-2018). 
+This chart shows that more people are being incarcerated in the U.S. over time. The number seems to have been stable for the past decade or so, but there was a massive increase from 1980 to 2008. 
 
 ## Growth of Prison Population by State
 
 
 ## Growth of Incarcerated Black and White Populations
-
+```{r incarceration, echo=FALSE}
+plot(incarceration_trends())
+```
+*Figure 3*. Average Number of Black and White Incarcerated (1970-2018). 
+This chart shows a relatively equal number of black and white people incarcerated for the most part, despite the much lower black population in the U.S. Recently, the number of black people incarcerated has decreased, but it is still much higher than it would be if the two races were incarcerated at equal rates.
 
 ## Map of Black Incarceration in the U.S.
-
-
-_All the very best with your work!_
+```{r black_map, echo=FALSE}
+plot(black_map())
+```
+*Figure 4*. Black Incarceration on a U.S. Map (1970-2018). 
+This map shows the different levels of black incarceration by state using a color scale. Utah stands out as a state with a very high Incarceration rate for black people, while states like Washington and California seem to have a lot lower rates.
 

@@ -23,8 +23,9 @@ In the 10 years before 2018, the population of black people in jail has changed 
 ## Growth of the U.S. Prison Population
 ```{r total, echo=FALSE}
 plot(plot_jail_pop_for_us())
-```
-*Figure 1*. Increase of Jail Population in U.S. (1970-2018). 
+```  
+
+*Figure 1*. Increase of Jail Population in U.S. (1970-2018).  
 This chart shows that more people are being incarcerated in the U.S. over time. The number seems to have been stable for the past decade or so, but there was a massive increase from 1980 to 2008. 
 
 ## Growth of Prison Population by State
@@ -35,14 +36,16 @@ This chart shows the comparison of the total number of people incarcerated by ea
 ## Growth of Incarcerated Black and White Populations
 ```{r incarceration, echo=FALSE}
 plot(incarceration_trends())
-```
-*Figure 3*. Average Number of Black and White Incarcerated (1970-2018). 
+```  
+
+*Figure 3*. Average Number of Black and White Incarcerated (1970-2018).  
 This chart shows a relatively equal number of black and white people incarcerated for the most part, despite the much lower black population in the U.S. Recently, the number of black people incarcerated has decreased, but it is still much higher than it would be if the two races were incarcerated at equal rates.
 
 ## Map of Black Incarceration in the U.S.
 ```{r black_map, echo=FALSE}
 plot(black_map())
-```
-*Figure 4*. Black Incarceration on a U.S. Map (1970-2018). 
+```  
+
+*Figure 4*. Black Incarceration on a U.S. Map (1970-2018).  
 This map shows the different levels of black incarceration by state using a color scale. Utah stands out as a state with a very high Incarceration rate for black people, while states like Washington and California seem to have a lot lower rates.
 

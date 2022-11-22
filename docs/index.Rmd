@@ -11,7 +11,7 @@ source("../source/analysis.R")
 ```
 
 ## Abstract 
-[TODO: Include a short abstract (about 50 words)]
+This paper shows the comparisons between different races and their incarceration rates. It also describes the trends of incarceration in the U.S. over the years of 1970 to 2018. Through this, we can observe visualizations that paint a picture of the unjust treatment of American jails.
 
 
 ## Introduction 
@@ -29,6 +29,8 @@ This chart shows that more people are being incarcerated in the U.S. over time. 
 
 ## Growth of Prison Population by State
 
+*Figure 2*. Total Incarcerated by State (1970-2018). 
+This chart shows the comparison of the total number of people incarcerated by each state from 1970 to 2018.
 
 ## Growth of Incarcerated Black and White Populations
 ```{r incarceration, echo=FALSE}

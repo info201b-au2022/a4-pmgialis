@@ -96,13 +96,12 @@ get_jail_pop_by_states <- function(states) {
 plot_jail_pop_by_states <- function(states) {
   ggplot(data = get_jail_pop_by_states(states)) +
     geom_line(
-      mapping = aes(x = year, y = pop)
-    ) + 
-    labs(
-      title = "Increase of Jail Population in U.S. by State (1970-2018)",
-      x = "Year",
-      y = "Total Jail Population"
-    )
+      mapping = aes(x = year, y = pop, color = state),
+      size = 1
+    ) +
+    labs(x = "Year", y= "Average in Jail", 
+         title = "Average Number of People Incarcerated for each State from 1970 to 2018",
+         color = "Race")
 }
 
 #----------------------------------------------------------------------------#
